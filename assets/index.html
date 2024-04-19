@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Apache Nifi: Bitcoin Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section class="intro">
+						<header>
+							<h1>
+								<span>Bitcoin Historical Analysis and Data Ingestion with</span>
+								<img src="images/gallery/thumbs/nifi_logo_about.svg" alt="Apache Nifi" width="400" height="100">
+							</h1>
+							<p>Project by Bhadresh Katariya & Jainish Satani</p>
+							<ul class="actions">
+								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<span class="image fill" data-position="center"><img src="images/gallery/thumbs/first.jpg" alt="" /></span>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section id="first">
+						<header>
+							<h2>What is Apache Nifi?</h2>
+							<ul class="actions">
+								<li><a href="#second" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<p><strong>Apache Nifi</strong> is a powerful, open-source data flow management system that automates the flow of data between software systems. It provides a user-friendly, web-based interface that allows users to easily create, control, and monitor data flows through a drag-and-drop interface.</p>
+							<span class="image main"><img src="images/gallery/thumbs/main.png" alt="" /></span>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section id="second">
+						<header>
+							<h2>How to configure Nifi?</h2>
+								<header>
+									<p>These tools and components work together to create powerful and flexible data flows within NiFi. Users can drag and drop components onto the canvas, connect them to define the data flow logic, and configure each component's properties to meet their specific requirements. NiFi's intuitive user interface and modular design make it accessible to users with varying levels of technical expertise. The ability to create custom processors and leverage the NiFi expression language further enhances its versatility, allowing users to tailor the platform to their unique data processing needs.</p>
+								</header>
+							<ul class="actions">
+								<li><a href="#third" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<p><strong>Nifi's</strong> user interface is indeed designed to be intuitive and user-friendly, it's important to recognize that NiFi is a powerful and feature-rich data integration platform. The simplicity of the UI should not be mistaken for a lack of complexity or capabilities under the hood.</p>
+							<ul class="feature-icons">
+								<li class="feature-icons" style="font-size:20px"><img src="images/gallery/thumbs/processor.png" alt="Processor" height="75" width="75" align="left">Processor</li>
+								<li class="feature-icons" style="font-size:20px"><img src="images/gallery/thumbs/input_port.png" alt="Input Port" height="75" width="75" align="left">Input Port</li>
+								<li class="feature-icons" style="font-size:20px"><img src="images/gallery/thumbs/output_port.png" alt="Output Port" height="75" width="75" align="left">Output Port</li>
+								<li class="feature-icons" style="font-size:20px"><img src="images/gallery/thumbs/process_group.png" alt="Process Group" height="75" width="75" align="left">Process Group</li>
+								<li class="feature-icons" style="font-size:20px"><img src="images/gallery/thumbs/remote_process_group.png" alt="Remote Process Group" height="75" width="75"align="left">Remote Process Group</li>
+								<li class="feature-icons" style="font-size:20px"><img src="images/gallery/thumbs/funnel.png" alt="Funnel" height="75" width="75" align="left">Funnel</li>
+								<li class="feature-icons" style="font-size:20px"><img src="images/gallery/thumbs/import_from_registry.png" alt="Import from Registry" height="75" width="75" align="left">Import from Registry</li>
+								<li class="feature-icons" style="font-size:20px"><img src="images/gallery/thumbs/label.png" alt="Label" height="75" width="75" align="left">Label</li>
+							</ul>
+							<p><strong>Processors</strong> are the building blocks of NiFi flows. They perform specific tasks on the data, such as extracting, transforming, routing, or persisting it. <strong>Input/Output Ports</strong> act as entry and exit points for data within a NiFi flow. <strong>Process groups</strong> are containers that logically group related processors and other components together. They help organize and manage complex flows by encapsulating subsets of the overall data processing logic. <strong>Remote process groups</strong> enable communication and data transfer between different NiFi instances or clusters. <strong>Funnels</strong> are used to combine or split data streams within a flow. They can merge data from multiple sources into a single stream or distribute data from a single source to multiple destinations. The <strong>Import from Registry</strong> feature enables users to import pre-built flow templates or components from the Registry into their NiFi instance. <strong>Labels</strong> are visual aids that help users annotate and document their NiFi flows. </p>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section id="third">
+						<header>
+							<h2>Apache Nifi Home Page</h2>
+						</header>
+						<div class="content">
+							<p><strong>Apache Nifi</strong> home page looks pretty minimal and the UI is very user friendly with the ease of use.</p>
+
+							<!-- Section -->
+								<section>
+									<header>
+										<h3>Nifi Home</h3>
+										<p>The default landing page of Apache NiFi is <a>https://localhost:8443/nifi</a>, which serves as the entry point for accessing the NiFi services and running your projects. Upon navigating to this URL, you'll be prompted with a login page. The default username and password can be found in the <a>logs/nifi-app.log file</a>. Once logged in, the NiFi user interface presents a canvas-like workspace where you can design and orchestrate your data flows. The interface is divided into several panels:<strong>Components Panel:</strong> Located in the top-left corner, this panel provides a collection of available processors, controllers, and other components that you can drag and drop onto the canvas to build your data flow.	<strong>Navigate Panel:</strong> Situated on the left side, this panel displays a hierarchical view of your data flow, allowing you to navigate through different process groups and components easily.	<strong>Operate Panel:</strong> This panel, typically located on the right side, offers various controls to start, stop, pause, or terminate your processors. It also provides options to delete processors or perform other operational tasks. To begin your project, you can start by adding the InvokeHTTP processor from the Components Panel. </p>
+										<ul class="actions">
+											<li><a href="#fourth" class="arrow scrolly"><span class="label">Next</span></a></li>
+										</ul>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/nifi_home.png" class="landscape"><img src="images/gallery/fulls/nifi_home.png" alt="" style="object-fit: contain;"/></a>
+											<a href="images/gallery/fulls/operate.jpg"><img src="images/gallery/fulls/operate.jpg" alt="" style="object-fit: contain;"/></a>
+											<a href="images/gallery/fulls/navigate.jpg"><img src="images/gallery/fulls/navigate.jpg" alt=""  style="object-fit: contain;"/></a>
+											<a href="images/gallery/fulls/components.jpg" class="landscape"><img src="images/gallery/fulls/components.jpg" alt=""  style="object-fit: contain;"/></a>
+										</div>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section  id="fourth">
+									<header>
+										<h3>Step 1: Add InvokeHTTP processor</h3>
+										<p>The first step in the NiFi flow is to configure the InvokeHTTP processor, which acts as the entry point for ingesting Bitcoin price data. Double-clicking on the processor allows you to specify the HTTP URL of the Bitcoin price API in the "Remote URL" field. In this project, we are ingesting historical and real-time Bitcoin price data, including attributes like date, opening price, highest price, lowest price, and closing price. The API is configured to return 10 entries per second, resulting in approximately 600 requests per minute, ensuring a steady data flow without overwhelming the API. It is recommended to provide a descriptive label, such as "Fetch Bitcoin Price Data," to clearly indicate the processor's purpose within the NiFi flow.</p>
+										<ul class="actions">
+											<li><a href="#fifth" class="arrow scrolly"><span class="label">Next</span></a></li>
+										</ul>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/1_processor.png" class="landscape"><img src="images/gallery/fulls/1_processor.png" alt="" style="object-fit: contain;"/></a>
+											<a href="images/gallery/fulls/1_properties.png" class="landscape"><img src="images/gallery/fulls/1_properties.png" alt="" style="object-fit: contain;"/></a>
+										</div>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section  id="fifth">
+									<header>
+										<h3>Step 2: Adding the JoltTransformjson Processor</h3>
+										<p>The retrieved data from the Bitcoin price API was in JSON format, and the SplitJson processor was employed to transform and restructure this JSON data into the desired format. This processor can be configured to perform intricate transformations on the JSON data structure using the EvaluateJsonPath processor and a Jolt specification, a powerful JSON-to-JSON transformation language. By specifying the Jolt specification code in the processor's settings, we can extract desired fields, reshape, filter, and transform the JSON data according to our requirements. Apache NiFi's visual interface, modular design, and processors like SplitJson and EvaluateJsonPath empower us to handle complex JSON data integration tasks with ease and efficiency.</p>
+										<ul class="actions">
+											<li><a href="#sixth" class="arrow scrolly"><span class="label">Next</span></a></li>
+										</ul>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/2_processor.png" class="portrait"><img src="images/gallery/fulls/2_processor.png" alt="" style="object-fit: contain;"/></a>
+											<a href="images/gallery/fulls/2_properties.png" class="portrait"><img src="images/gallery/fulls/2_properties.png" alt="" style="object-fit: contain;"/></a>
+											<a href="images/gallery/fulls/2_advanced.png" class="landscape"><img src="images/gallery/fulls/2_advanced.png" alt="" style="object-fit: contain;"/></a>
+										</div>
+									</div>
+								</section>
+							
+							<!-- Section -->
+							<section  id="sixth">
+								<header>
+									<h3>Step 3: Adding PutFile processor</h3>
+									<p>The PutFile processor in Apache NiFi offers a versatile solution for persisting transformed data to various destinations. In this project, it was configured to write the extracted Bitcoin price data, transformed into a structured JSON format, to a local directory. However, NiFi's flexibility extends beyond local storage, enabling seamless integration with cloud platforms and remote destinations. The PutFile processor can be easily reconfigured to store data on cloud storage services like Amazon S3, Azure Blob Storage, or Google Cloud Storage, ensuring data accessibility and scalability. Furthermore, NiFi supports a wide range of output formats, including CSV, which was leveraged in this project to convert the JSON data into a CSV format suitable for analysis and visualization tools like Tableau. This versatility empowers users to tailor the data persistence process to their specific requirements, streamlining the integration of data into various downstream systems and applications.</p>
+									<ul class="actions">
+										<li><a href="#seven" class="arrow scrolly"><span class="label">Next</span></a></li>
+									</ul>
+								</header>
+								<div class="content">
+									<div class="gallery">
+										<a href="images/gallery/fulls/3_processor.png" class="portrait"><img src="images/gallery/fulls/3_processor.png" alt="" style="object-fit: contain;"/></a>
+										<a href="images/gallery/fulls/3_properties.png" class="portrait"><img src="images/gallery/fulls/3_properties.png" alt="" style="object-fit: contain;"/></a>
+									</div>
+								</div>
+							</section>
+
+							<!-- Section -->
+							<section  id="seven">
+								<header>
+									<h3>Using Tableau to analyze the generated data</h3>
+									<p>The NiFi flow culminated in the transformation of the JSON data into a CSV format, which was subsequently ingested into Tableau for comprehensive data analysis and visualization. The resulting visualization depicted the high, low, and opening prices of Bitcoin, with the x-axis representing the price range and the y-axis illustrating the monthly fluctuations in Bitcoin's value. This visual representation facilitated a deeper understanding of the historical price trends, enabling further exploration and insights into the cryptocurrency market's dynamics.</p>
+									<ul class="actions">
+										<li><a href="#eight" class="arrow scrolly"><span class="label">Next</span></a></li>
+									</ul>
+								</header>
+								<div class="content">
+									<div class="gallery">
+										<a href="images/gallery/fulls/tableau.png" class="landscape"><img src="images/gallery/fulls/tableau.png" alt="" style="object-fit: contain;"/></a>
+									</div>
+								</div>
+							</section>
+
+							<!-- Section -->
+							<section  id="eight">
+								<header>
+									<h3>Conclusion and Results</h3>
+									<p>Apache NiFi proves to be a valuable tool for data integration and automation tasks, thanks to its visual interface, extensible architecture, and rich set of processors. While NiFi is primarily designed for data flow management, it can be integrated with other tools or frameworks for more complex data processing or analysis tasks.</p>
+									<ul class="actions">
+										<li><a href="#nine" class="arrow scrolly"><span class="label">Next</span></a></li>
+									</ul>
+								</header>
+								<div class="content">
+									<p>This project showcases NiFi's capabilities in handling structured data formats like JSON and highlights its potential for streamlining data integration processes across various sources and destinations. Lastly we have performed analysis on the fetched data and showcased it on our likelihood.</p>
+								</div>
+							</section>
+
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section  id="nine">
+						<header>
+							<h2>More on Nifi</h2>
+							<ul class="actions">
+								<li><a href="#ten" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<p><strong>Apache NiFi</strong> is renowned for its user-friendly interface and minimal coding requirements, making it accessible to users with varying technical expertise. When connecting processors within a data flow, it is crucial to define the relationships between them, such as success, failure, termination, response, and retry. In our case, the first processor is linked to the second one, with the success and retry checkboxes selected. This configuration instructs the first processor to pass the fetched data to the subsequent processor for further processing upon successful execution, while also enabling it to retry the operation in case of any updates or changes to the data source. NiFi's visual approach and intuitive relationship management streamline the process of building robust and scalable data pipelines, enabling seamless integration and automation across diverse systems and environments. Click on the links below to get to know about Nifi Project in detail and how to install and use Nifi.</p>
+							<ul class="actions">
+								<li><a href="https://nifi.apache.org/" class="button primary large">Get Started</a></li>
+								<li><a href="https://nifi.apache.org/docs/nifi-docs/html/user-guide.html" class="button large">Documentation</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section id="ten">
+						<header>
+							<h2>Get in touch</h2>
+						</header>
+						<div class="content">
+							
+						</div>
+						<footer>
+							<ul class="items">
+								<li>
+									<h3>E-mail</h3>
+									<ul class="icons">
+										<li><span> Bhadresh </span><a href="mailto:bkatariya@trentu.ca" class="fa fa-envelope"><span class="label"></span></a></li>
+										<li><span> Jainish </span><a href="mailto:jsatani@trentu.ca" class="fa fa-envelope"><span class="label"></span></a></li>
+									</ul>
+								</li>
+								<li>
+									<h3>Address</h3>
+									<span>Peterborough, Ontario, CA</span>
+								</li>
+								<li>
+									<h3>Elsewhere</h3>
+									<ul class="icons">
+										<li><span> Bhadresh </span><a href="https://www.linkedin.com/in/bhadresh-katariya-42467728a/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><span> Jainish </span><a href="https://www.linkedin.com/in/jainish-satani-1549211b1/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><span> Website Repository </span><a href="https://github.com/bhadreshkat/Apache-Nifi" class="icon brands fa-github-square"><span class="label">Github</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Copyright -->
+					<div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
